@@ -13,4 +13,8 @@ fun main() {
     for (animal in animals) {
         animal.eat("мясо")
     }
+
+    val availableFoods = arrayOf("мясо", "трава", "листья", "яблоки", "овощи")
+
+    feedAnimals(animals, availableFoods)
 }

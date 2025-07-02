@@ -11,6 +11,14 @@ abstract class Animal(val name: String, val height: Double, val weight: Double) 
         }
     }
 
+    fun feedAnimals(animals: Array<Animal>, foods: Array<String>) {
+        for (animal in animals) {
+            for (food in foods) {
+                animal.eat(food)
+            }
+        }
+    }
+
     abstract class CarnivorousAnimal(name: String, height: Double, weight: Double) : Animal(name, height, weight) {
         override val foodPreferences = listOf("мясо", "птица", "рыба")
     }
